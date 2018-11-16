@@ -1,4 +1,4 @@
-uuid: 283b1d05-56cd-4499-97ba-ffee230bdfc0
+uuid: cab6a1c8-f79e-4782-a1f0-324484546548
 langcode: en
 status: true
 dependencies: {  }
@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'Website feedback'
 recipients:
-  - web@philltran.com
+  - ptran@woficc.com
 reply: ''
 weight: 0
 message: 'Your message has been sent.'

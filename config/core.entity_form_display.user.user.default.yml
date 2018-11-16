@@ -1,8 +1,10 @@
-uuid: 32512acb-7f2f-4bbe-b695-c2c636443e61
+uuid: ccf51da1-3b43-4dd6-9e6e-6df77b38c8f7
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_last_name
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -20,6 +22,22 @@ content:
     region: content
   contact:
     weight: 5
+    region: content
+  field_first_name:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_last_name:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   language:
     weight: 0

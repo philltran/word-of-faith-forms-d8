@@ -1,0 +1,35 @@
+uuid: cea6bf56-1ecb-4cd4-bd5c-f6d09675f7bc
+langcode: en
+status: true
+dependencies: {  }
+id: employee_logs_in
+label: 'Employee logs in'
+events:
+  -
+    event_name: rules_user_login
+description: ''
+tags:
+  - ''
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 4743b5a1-891f-4286-8540-efe45974b7ba
+  conditions:
+    id: rules_and
+    uuid: a90d1d47-db08-4f15-87dc-1ebbba711978
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 13176f0b-29de-4849-81df-202b7043874b
+    actions:
+      -
+        id: rules_action
+        uuid: 283c261a-b247-485c-8e3f-989742620522
+        context_values:
+          url: /training/workplace-harassment-training
+        context_mapping: {  }
+        context_processors:
+          url:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: rules_page_redirect

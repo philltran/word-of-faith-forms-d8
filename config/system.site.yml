@@ -1,11 +1,11 @@
-uuid: 74e7139f-cb75-4f4f-8f09-e2ea737dec17
-name: word-of-faith-forms-d8
-mail: web@philltran.com
+uuid: 45fed0f4-e3fe-4334-88d9-281fce5c1fb1
+name: 'Word of Faith - Forms'
+mail: ptran@woficc.com
 slogan: ''
 page:
-  403: ''
+  403: /node/2
   404: ''
-  front: /node
+  front: /user
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

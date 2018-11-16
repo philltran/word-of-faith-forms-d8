@@ -1,0 +1,26 @@
+uuid: ad61f2b4-11ec-4a13-8ef0-68fc1a3d8a89
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - bartik
+id: userlogin
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /login
+    negate: false
+    context_mapping: {  }

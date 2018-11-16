@@ -1,4 +1,4 @@
-uuid: 75760a74-94d7-4eff-a75f-721a5730985e
+uuid: f3542105-2707-4436-96e3-6d3d02e24865
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,7 @@ dependencies:
     - system.menu.tools
   module:
     - system
+    - user
   theme:
     - bartik
 _core:
@@ -23,4 +24,11 @@ settings:
   label_display: visible
   level: 1
   depth: 0
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
